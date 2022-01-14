@@ -2,13 +2,26 @@
     background: #f1f1f1;
     display: grid;  
     font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas: 
+        "cabecalho"
+        "conteudo"
+        "rodape";
+
+    grid-template-columns: auto;
+    grid-template-rows: 50px 100vh auto;
 }
 
 .cabecalho {
+    background: #1bf3c4;
+    grid-area: cabecalho;
 }
- 
+
 .conteudo {
+    background: #e4786a;
+    grid-area: conteudo;
 }
 
 .rodape {
+    background: #5d5adf;
+    grid-area: rodape;
 }
