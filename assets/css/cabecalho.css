@@ -1,0 +1,27 @@
+@keyframes bordaMenu {
+    0% {
+      display: block;
+      border-bottom: 2px solid #0073e6;
+      transform: scaleX(0);
+      transition: transform  250ms ease-in-out;
+    }
+    100% {
+      border-bottom: 2px solid #499ef3;
+      transform: scaleX(1);
+    }
+    
+}
+.menu__link{
+    color: #333333;
+    padding: .5rem 1rem;
+}
+
+ .menu__link.ativo{
+    border-bottom: 2px solid #0073e6;
+}
+
+.menu__link:hover{
+    animation: bordaMenu;
+    animation-duration: 4s;
+    
+}
