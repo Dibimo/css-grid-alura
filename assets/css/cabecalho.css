@@ -6,14 +6,19 @@
   color: #333333;
   padding: 0.5rem 1rem;
 }
+.menu__link.ativo{
+  border-bottom: 2px solid var(--azul-link);
+  
+}
 .menu__link::after{
   content: '';
   display: block;
-  width: 0;
-  height: 2px;
-  background-color: var(--azul-link);
-  transition: width .3s;
+  /* border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%; */
+  border-bottom: 2px solid var(--azul-link);
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
 }
 .menu__link:hover::after{
-  width: 100%;
+  transform: scaleX(1);
 }
