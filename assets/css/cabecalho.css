@@ -4,7 +4,7 @@
 .menu__link {
   display: inline-block;
   color: #333333;
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 1rem;
 }
 .menu__link.ativo{
   border-bottom: 2px solid var(--azul-link);
@@ -15,6 +15,7 @@
   display: block;
   /* border-bottom-left-radius: 10%;
   border-bottom-right-radius: 10%; */
+  padding-bottom: 0.25rem;
   border-bottom: 2px solid var(--azul-link);
   transform: scaleX(0);
   transition: transform 250ms ease-in-out;
