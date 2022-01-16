@@ -95,5 +95,19 @@
 
 }
 .destaques__categorias___link{
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33% ;
   color: inherit;
+}
+.destaques__categorias___link::after{
+  content: '';
+  /* display: block; */
+  padding-bottom: 1rem;
+  grid-row: 1/1;
+  border-left: 2px solid #1778e6;
+  transform: scaleY(0);
+  transition: transform 250ms ease-in-out;
+}
+.destaques__categorias___link:hover::after{
+  transform: scaleY(1);
 }
