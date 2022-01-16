@@ -95,16 +95,15 @@
 
 }
 .destaques__categorias___link{
-  display: grid;
-  grid-template-columns: 33.33% 33.33% 33.33% ;
+  display: flex;
   color: inherit;
 }
 .destaques__categorias___link::after{
   content: '';
   /* display: block; */
   padding-bottom: 1rem;
-  grid-row: 1/1;
   border-left: 2px solid #1778e6;
+  order: -1;
   transform: scaleY(0);
   transition: transform 250ms ease-in-out;
 }
