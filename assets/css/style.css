@@ -19,6 +19,7 @@
 }
 
 .conteudo {
+    padding: 0 2rem;
     grid-area: conteudo;
 }
 
